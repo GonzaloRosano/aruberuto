@@ -1,0 +1,79 @@
+---
+---
+<div class="section">
+  <div class="inner">
+    <div class="text">
+      <h3>¿Tenés alguna duda?</h3>
+      <p>Escribime por email. También estoy disponible para clases privadas.</p>
+    </div>
+    <a href="mailto:albertoalonsoesp@gmail.com" class="email-link">
+      Contactar por email
+    </a>
+  </div>
+</div>
+
+<style>
+  .section {
+    background: var(--color-ink);
+    color: var(--color-cream);
+    padding: 5rem 0;
+  }
+
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .text h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: 300;
+  }
+
+  .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 0.9rem 1.8rem;
+    color: var(--color-cream);
+    text-decoration: none;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: border-color 0.2s, background 0.2s;
+    font-weight: 400;
+  }
+
+  .email-link::after {
+    content: '→';
+    color: var(--color-crimson);
+  }
+
+  .email-link:hover {
+    border-color: var(--color-crimson);
+    background: #1f1515;
+  }
+
+  @media (max-width: 900px) {
+    .inner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 1.5rem;
+    }
+  }
+</style>

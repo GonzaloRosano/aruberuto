@@ -1,0 +1,88 @@
+---
+import BonusItem from './BonusItem.astro';
+import Guarantee from './Guarantee.astro';
+
+const bonuses = [
+  {
+    tag: 'Bonus 01',
+    title: 'Sala de estudio virtual 24/7',
+    body: 'Chateá o hacé videollamadas con otros estudiantes en cualquier momento, todos los días de la semana. Una comunidad que nunca cierra.',
+  },
+  {
+    tag: 'Bonus 02',
+    title: 'Apuntes de cada clase',
+    body: 'Cada lección viene acompañada de apuntes para que puedas repasar el contenido cuando y donde quieras.',
+  },
+  {
+    tag: 'Bonus 03',
+    title: 'Exámenes de progreso',
+    body: 'Después de cada clase, un examen para medir tu avance y afianzar lo aprendido. El mejor indicador de que vas por el camino correcto.',
+  },
+  {
+    tag: 'Bonus 04',
+    title: 'Vocabulario por temáticas',
+    body: 'Listas de vocabulario organizadas por temas para que construyas tu léxico de forma estructurada y práctica.',
+  },
+  {
+    tag: 'Bonus 05',
+    title: 'Intensificación en la clase 18',
+    body: 'A partir de la clase 18, las horas de estudio pasan de 2 a 3 semanales. El curso se profundiza exactamente cuando tu nivel lo permite.',
+  },
+  {
+    tag: 'Bonus 06',
+    title: 'Deberes avanzados',
+    body: 'Desde la clase 18, los deberes se vuelven parte esencial del aprendizaje. Aplicá y practicá lo que aprendiste fuera del aula virtual.',
+  },
+];
+---
+<section class="section">
+  <p class="label">Bonus incluidos</p>
+  <h2 class="title">Todo lo que viene<br />con tu inscripción</h2>
+  <div class="grid">
+    {bonuses.map((b) => <BonusItem tag={b.tag} title={b.title} body={b.body} />)}
+  </div>
+  <Guarantee />
+</section>
+
+<style>
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2.5rem;
+  }
+
+  .label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 4rem;
+    border: 1px solid var(--color-edge);
+  }
+
+  @media (max-width: 900px) {
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

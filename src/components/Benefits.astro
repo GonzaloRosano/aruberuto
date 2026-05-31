@@ -1,0 +1,76 @@
+---
+import BenefitCard from './BenefitCard.astro';
+
+const benefits = [
+  {
+    num: '01',
+    title: 'Puente a una <strong>cultura auténtica</strong>',
+    body: 'Aprender japonés enriquece la apreciación de su cultura y obras originales, permitiendo captar detalles que siempre se pierden al traducir.',
+  },
+  {
+    num: '02',
+    title: '<strong>Tejiendo lazos</strong> con Japón',
+    body: 'Dominar el idioma mejora radicalmente la experiencia en Japón y ayuda a construir vínculos más profundos con los japoneses en cualquier lugar del mundo.',
+  },
+  {
+    num: '03',
+    title: 'Un método <strong>que funciona</strong>',
+    body: 'Sin rodeos ni contenido superfluo. Enfocado en el lenguaje cotidiano, el mismo método que a mí me llevó a hablar japonés con fluidez viviendo en Japón.',
+  },
+  {
+    num: '04',
+    title: 'Aprendizaje <strong>flexible y profundo</strong>',
+    body: '3 horas semanales estructuradas: clases grabadas que podés repasar cuando quieras, más una videollamada en vivo para resolver dudas y practicar con otros.',
+  },
+];
+---
+<section class="section">
+  <p class="label">Por qué aprender japonés</p>
+  <h2 class="title">Más que un idioma,<br />una puerta a otro mundo</h2>
+  <div class="grid">
+    {benefits.map((b) => <BenefitCard num={b.num} title={b.title} body={b.body} />)}
+  </div>
+</section>
+
+<style>
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2.5rem;
+  }
+
+  .label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 4rem;
+    border: 1px solid var(--color-edge);
+  }
+
+  @media (max-width: 900px) {
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

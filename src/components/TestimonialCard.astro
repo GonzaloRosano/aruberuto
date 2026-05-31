@@ -1,0 +1,45 @@
+---
+interface Props {
+  quote: string;
+  name: string;
+}
+
+const { quote, name } = Astro.props;
+---
+<div class="card">
+  <div class="quote">"</div>
+  <p class="text">{quote}</p>
+  <p class="name">{name}</p>
+</div>
+
+<style>
+  .card {
+    background: var(--color-cream);
+    padding: 2rem;
+    border: 1px solid var(--color-edge);
+  }
+
+  .quote {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-crimson);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .text {
+    font-size: 0.92rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .name {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-ink);
+  }
+</style>

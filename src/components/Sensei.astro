@@ -1,0 +1,170 @@
+---
+---
+<section class="section">
+  <div class="grid">
+    <div class="img-wrap">
+      <img
+        src="https://aruberuto.com/wp-content/uploads/2023/11/a.webp"
+        alt="Alberto Alonso Cividanes — sensei"
+        width="600"
+        height="750"
+        loading="lazy"
+        decoding="async"
+        class="photo"
+      />
+      <div class="accent"></div>
+    </div>
+    <div class="text">
+      <p class="label">Tu sensei</p>
+      <h2 class="title">Quién será<br />tu sensei</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">+10</div>
+          <div class="stat-label">Años hablando japonés</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">日本</div>
+          <div class="stat-label">Vive en Japón</div>
+        </div>
+      </div>
+      <p>
+        Me llamo <strong>Alberto Alonso Cividanes</strong>, soy un apasionado de la
+        cultura japonesa y llevo más de 10 años hablando el idioma. Vivo en Japón,
+        lo que me da la oportunidad de estar inmerso completamente en todo lo que
+        tiene que ver con este país y su idioma.
+      </p>
+      <p>
+        Siempre quise hablar japonés con fluidez, y ahora que lo logré,
+        <strong>quiero ayudar a mis estudiantes a hacer lo mismo.</strong> Mi meta
+        es que puedan cambiar sus vidas aprendiendo japonés, tal como cambió la mía.
+      </p>
+      <p>
+        Estaré con vos en cada etapa del camino, para que ganes confianza y habilidad
+        paso a paso.
+      </p>
+      <a href="#comprar" class="btn">Quiero aprender japonés</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .img-wrap {
+    position: relative;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.4s;
+  }
+
+  .img-wrap:hover .photo {
+    filter: grayscale(60%);
+  }
+
+  .accent {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 1px solid var(--color-crimson);
+    z-index: -1;
+  }
+
+  .label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .stats {
+    display: flex;
+    gap: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .stat-num {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-crimson);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin-top: 0.3rem;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .text p strong {
+    font-weight: 500;
+    color: var(--color-ink);
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--color-crimson);
+    color: var(--color-cream);
+    padding: 0.9rem 2.2rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    margin-top: 1.5rem;
+  }
+
+  .btn:hover {
+    background: var(--color-crimson-dark);
+  }
+
+  @media (max-width: 900px) {
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+</style>

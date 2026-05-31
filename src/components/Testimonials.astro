@@ -1,0 +1,77 @@
+---
+import TestimonialCard from './TestimonialCard.astro';
+
+const testimonials = [
+  {
+    quote:
+      'Las clases han superado ampliamente mis expectativas. Pensé que iba a aprender un poco, pero creo que con el tiempo necesario puedo aprender lo suficiente para mantener conversaciones.',
+    name: 'Joaquín Álvarez',
+  },
+  {
+    quote:
+      'Tengo mucho más estructurado el japonés en mi cabeza. Al escuchar hablar puedo distinguir muchas cosas. Sé que me falta estudio, pero voy por el camino correcto.',
+    name: 'Mario Guinda',
+  },
+  {
+    quote:
+      'Es un método sencillo y fácil de entender. No me esperaba avanzar tan rápido desde el primer mes.',
+    name: 'Ana González',
+  },
+];
+---
+<div class="section">
+  <div class="inner">
+    <p class="label">Lo que dicen los estudiantes</p>
+    <h2 class="title">Perspectivas después<br />de 3 meses de curso</h2>
+    <div class="grid">
+      {testimonials.map((t) => <TestimonialCard quote={t.quote} name={t.name} />)}
+    </div>
+  </div>
+</div>
+
+<style>
+  .section {
+    background: var(--color-testi-bg);
+    padding: 6rem 0;
+  }
+
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+
+  .label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    .inner {
+      padding: 0 1.5rem;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

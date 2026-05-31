@@ -1,0 +1,166 @@
+---
+---
+<div class="wrapper">
+  <div class="kanji" aria-hidden="true">日本語</div>
+  <div class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Curso de japonés · 100% online</p>
+      <h1 class="title">
+        Aprende japonés de la manera más <em>sencilla</em> y divertida
+      </h1>
+      <p class="sub">
+        Intégrate en la cultura que tanto te apasiona. Con un método probado,
+        directo y sin relleno.
+      </p>
+      <div class="actions">
+        <a href="#comprar" class="btn-primary">Quiero aprender japonés</a>
+        <span class="btn-ghost">Acceso inmediato</span>
+      </div>
+    </div>
+    <div class="video">
+      <iframe
+        src="https://player.vimeo.com/video/883626042?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
+        allowfullscreen
+        allow="clipboard-write"
+        title="Vista previa del curso"
+        loading="lazy"
+      ></iframe>
+      <p class="video-label">Vista previa del curso</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kanji {
+    font-family: var(--font-serif);
+    font-size: 16rem;
+    line-height: 1;
+    color: #ece9e3;
+    position: absolute;
+    right: -2rem;
+    top: 6rem;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+    writing-mode: vertical-rl;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 10rem 2.5rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    animation: fadeUp 0.4s ease 0.05s both;
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    animation: fadeUp 0.4s ease 0.1s both;
+  }
+
+  .title em {
+    color: var(--color-crimson);
+    font-style: normal;
+  }
+
+  .sub {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    max-width: 440px;
+    animation: fadeUp 0.4s ease 0.15s both;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: fadeUp 0.4s ease 0.2s both;
+  }
+
+  .btn-primary {
+    background: var(--color-crimson);
+    color: var(--color-cream);
+    padding: 0.9rem 2.2rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-crimson-dark);
+  }
+
+  .btn-ghost {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    border-bottom: 1px solid var(--color-edge);
+  }
+
+  .video {
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 0.4s ease 0.15s both;
+  }
+
+  .video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+  }
+
+  .video-label {
+    position: absolute;
+    bottom: -1.2rem;
+    right: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding-top: 8rem;
+    }
+
+    .title {
+      font-size: 2.4rem;
+    }
+
+    .kanji {
+      font-size: 8rem;
+    }
+  }
+</style>

@@ -1,0 +1,57 @@
+---
+---
+<nav>
+  <a href="#" class="logo">アルベルト<span>・</span>誠</a>
+  <a href="#comprar" class="cta">Quiero aprender</a>
+</nav>
+
+<style>
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(248, 246, 241, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-edge);
+  }
+
+  .logo {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+
+  .logo span {
+    color: var(--color-crimson);
+  }
+
+  .cta {
+    background: var(--color-ink);
+    color: var(--color-cream);
+    padding: 0.55rem 1.4rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .cta:hover {
+    background: var(--color-crimson);
+  }
+
+  @media (max-width: 900px) {
+    nav {
+      padding: 1rem 1.5rem;
+    }
+  }
+</style>

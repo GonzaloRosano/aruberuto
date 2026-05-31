@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Shippori Mincho', serif;
+  --font-sans: 'DM Sans', sans-serif;
+
+  --color-ink: #0d0d0d;
+  --color-cream: #f8f6f1;
+  --color-crimson: #c0392b;
+  --color-crimson-dark: #922b21;
+  --color-muted: #8a8a8a;
+  --color-edge: #e2ded8;
+  --color-darkborder: #2a2a2a;
+  --color-testi-bg: #f2ede6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

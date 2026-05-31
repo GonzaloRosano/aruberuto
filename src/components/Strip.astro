@@ -1,0 +1,48 @@
+---
+const items = [
+  'Acceso inmediato',
+  'Principiantes & intermedios',
+  'Garantía de 7 días',
+  '€49 / mes',
+];
+---
+<div class="strip">
+  {items.map((item) => <span class="item">{item}</span>)}
+</div>
+
+<style>
+  .strip {
+    background: var(--color-ink);
+    color: var(--color-cream);
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .item::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--color-crimson);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    .strip {
+      gap: 2rem;
+    }
+  }
+</style>

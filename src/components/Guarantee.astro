@@ -1,0 +1,82 @@
+---
+---
+<div class="guarantee">
+  <div class="badge">
+    <div class="circle">
+      <span class="num">7</span>
+      <span class="days">días de garantía</span>
+    </div>
+  </div>
+  <div class="text">
+    <h3>Garantía incondicional de 7 días</h3>
+    <p>
+      Tendrás acceso a las primeras clases y al grupo exclusivo de alumnos. Si por
+      cualquier razón sentís que el curso no cumple tus expectativas, pedís el reembolso
+      y te devolvemos cada céntimo de tu inversión, sin complicaciones. Tu confianza
+      es lo primero.
+    </p>
+  </div>
+</div>
+
+<style>
+  .guarantee {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 3rem;
+    border-top: 1px solid var(--color-edge);
+    margin-top: 3rem;
+  }
+
+  .badge {
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .circle {
+    width: 130px;
+    height: 130px;
+    border: 1.5px solid var(--color-ink);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .num {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .days {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .text h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .text p {
+    font-size: 0.92rem;
+    color: #666;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  @media (max-width: 900px) {
+    .guarantee {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

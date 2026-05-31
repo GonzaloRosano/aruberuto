@@ -1,0 +1,66 @@
+---
+interface Props {
+  tag: string;
+  title: string;
+  body: string;
+}
+
+const { tag, title, body } = Astro.props;
+---
+<div class="item">
+  <p class="tag">{tag}</p>
+  <h4 class="title">{title}</h4>
+  <p class="body">{body}</p>
+</div>
+
+<style>
+  .item {
+    padding: 2rem;
+    border-right: 1px solid var(--color-edge);
+    border-bottom: 1px solid var(--color-edge);
+  }
+
+  .item:nth-child(3n) {
+    border-right: none;
+  }
+
+  .item:nth-last-child(-n + 3) {
+    border-bottom: none;
+  }
+
+  .tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-crimson);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .body {
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  @media (max-width: 900px) {
+    .item {
+      border-right: none;
+    }
+
+    .item:nth-last-child(-n + 3) {
+      border-bottom: 1px solid var(--color-edge);
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+  }
+</style>
