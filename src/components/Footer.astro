@@ -2,7 +2,10 @@
 ---
 <footer>
   <div class="inner">
-    <div class="logo">アルベルト<span>・</span>誠</div>
+    <div class="logo">
+      <span class="logo-es">Alberto Makoto</span>
+      <span class="logo-jp">アルベルト<span class="dot">・</span>誠</span>
+    </div>
     <nav class="links" aria-label="Footer">
       <a href="#">Términos de uso</a>
       <a href="#">Política de privacidad</a>
@@ -10,7 +13,7 @@
   </div>
   <div class="inner">
     <p class="copy">
-      ® 2025 Aruberuto Makoto · Todos los derechos reservados · Ninguna información
+      ® 2026 Aruberuto Makoto · Todos los derechos reservados · Ninguna información
       contenida en este producto debe interpretarse como garantía de resultados
       específicos.
     </p>
@@ -36,12 +39,15 @@
   }
 
   .logo {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
     font-family: var(--font-serif);
     font-size: 1rem;
     color: #555;
   }
 
-  .logo span {
+  .logo .dot {
     color: var(--color-crimson);
   }
 
@@ -84,6 +90,10 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 1.5rem;
+    }
+
+    .logo .logo-jp {
+      display: none;
     }
   }
 </style>

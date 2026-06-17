@@ -1,7 +1,10 @@
 ---
 ---
 <nav>
-  <a href="#" class="logo">アルベルト<span>・</span>誠</a>
+  <a href="#" class="logo">
+    <span class="logo-es">Alberto Makoto</span>
+    <span class="logo-jp">アルベルト<span class="dot">・</span>誠</span>
+  </a>
   <a href="#comprar" class="cta">Quiero aprender</a>
 </nav>
 
@@ -22,6 +25,9 @@
   }
 
   .logo {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
     font-family: var(--font-serif);
     font-size: 1.1rem;
     letter-spacing: 0.04em;
@@ -29,7 +35,7 @@
     text-decoration: none;
   }
 
-  .logo span {
+  .logo .dot {
     color: var(--color-crimson);
   }
 
@@ -52,6 +58,10 @@
   @media (max-width: 900px) {
     nav {
       padding: 1rem 1.5rem;
+    }
+
+    .logo .logo-jp {
+      display: none;
     }
   }
 </style>
