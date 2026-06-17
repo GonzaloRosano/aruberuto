@@ -6,7 +6,7 @@ RUN corepack enable
 # --- deps ---
 FROM base AS deps
 WORKDIR /app
-COPY package.json pnpm-lock.yaml pnpm.yaml ./
+COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile --ignore-scripts && pnpm rebuild esbuild
 
 # --- build ---
