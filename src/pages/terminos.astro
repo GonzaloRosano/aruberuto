@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Términos de uso — Aruberuto Makoto">
+  <Navbar />
+  <main class="legal">
+    <h1>Términos de uso</h1>
+    <p class="updated">Última actualización: junio de 2026</p>
+
+    <h2>1. Objeto</h2>
+    <p>
+      Estos términos regulan el acceso y la contratación del curso de japonés
+      ofrecido por Aruberuto Makoto. Al inscribirte aceptás estas condiciones en
+      su totalidad.
+    </p>
+
+    <h2>2. Acceso al curso</h2>
+    <p>
+      Tras completar el pago a través de la plataforma de Hotmart, recibís acceso
+      inmediato a los contenidos. El acceso es personal e intransferible.
+    </p>
+
+    <h2>3. Pagos y suscripción</h2>
+    <p>
+      El curso se ofrece bajo una suscripción mensual de €49, sin permanencia.
+      Podés cancelar cuando quieras desde tu cuenta de Hotmart; la cancelación
+      detiene futuros cobros.
+    </p>
+
+    <h2>4. Garantía de devolución</h2>
+    <p>
+      Si dentro de los primeros 7 días el curso no cumple tus expectativas,
+      podés solicitar la devolución del 100% del importe abonado.
+    </p>
+
+    <h2>5. Propiedad intelectual</h2>
+    <p>
+      Todos los materiales (vídeos, apuntes, ejercicios) son propiedad de
+      Aruberuto Makoto y no pueden reproducirse ni distribuirse sin autorización.
+    </p>
+
+    <h2>6. Contacto</h2>
+    <p>
+      Para cualquier consulta podés escribir a
+      <a href="mailto:albertoalonsoesp@gmail.com">albertoalonsoesp@gmail.com</a>.
+    </p>
+
+    <p class="note">
+      <!-- TODO: completar datos del titular (nombre/empresa, NIF, domicilio) y
+           legislación/jurisdicción aplicable antes de publicar. -->
+    </p>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 9rem 1.5rem 5rem;
+  }
+
+  .legal h1 {
+    font-family: var(--font-serif);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal h2 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2.5rem 0 0.75rem;
+  }
+
+  .legal p {
+    color: #444;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .legal a {
+    color: var(--color-crimson);
+  }
+
+  .updated {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+</style>

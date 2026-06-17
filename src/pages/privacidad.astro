@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Política de privacidad — Aruberuto Makoto">
+  <Navbar />
+  <main class="legal">
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: junio de 2026</p>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>
+      Aruberuto Makoto es responsable del tratamiento de los datos personales que
+      nos facilitás a través de este sitio y del proceso de inscripción.
+    </p>
+
+    <h2>2. Datos que recopilamos</h2>
+    <p>
+      Recopilamos los datos que nos proporcionás al contactarnos por email y los
+      necesarios para gestionar tu inscripción y el pago, que se procesa a través
+      de Hotmart.
+    </p>
+
+    <h2>3. Finalidad</h2>
+    <p>
+      Utilizamos tus datos para darte acceso al curso, gestionar la suscripción,
+      responder tus consultas y enviarte información relacionada con tu formación.
+    </p>
+
+    <h2>4. Conservación</h2>
+    <p>
+      Conservamos tus datos mientras mantengas la suscripción activa y durante el
+      plazo legalmente exigible una vez finalizada la relación.
+    </p>
+
+    <h2>5. Tus derechos</h2>
+    <p>
+      Podés ejercer tus derechos de acceso, rectificación, supresión, oposición y
+      portabilidad escribiendo a
+      <a href="mailto:albertoalonsoesp@gmail.com">albertoalonsoesp@gmail.com</a>.
+    </p>
+
+    <h2>6. Terceros</h2>
+    <p>
+      El pago y la entrega del curso se gestionan mediante Hotmart, que actúa como
+      encargado del tratamiento conforme a su propia política de privacidad.
+    </p>
+
+    <p class="note">
+      <!-- TODO: completar datos del titular (nombre/empresa, NIF, domicilio),
+           base legal y autoridad de control aplicable antes de publicar. -->
+    </p>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 9rem 1.5rem 5rem;
+  }
+
+  .legal h1 {
+    font-family: var(--font-serif);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .legal h2 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2.5rem 0 0.75rem;
+  }
+
+  .legal p {
+    color: #444;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .legal a {
+    color: var(--color-crimson);
+  }
+
+  .updated {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+</style>
