@@ -2,31 +2,31 @@
 
 # 日本語 Aruberuto Makoto
 
-**Landing page — curso de japonés online**
+**Landing page — online Japanese course**
 
 </div>
 
 ---
 
-## Sobre el proyecto
+## About the project
 
-Landing page de una sola vista para vender el curso de japonés online de **Aruberuto Makoto**, dictado por Alberto Alonso Cividanes. El objetivo es directo: comunicar el método, generar confianza con testimonios y prueba social, y convertir al visitante en alumno inscrito.
+Single-view landing page to sell **Aruberuto Makoto**'s online Japanese course, taught by Alberto Alonso Cividanes. The goal is direct: communicate the method, build trust through testimonials and social proof, and convert the visitor into an enrolled student.
 
-No es un sitio informativo, es una página de venta. Cada sección empuja hacia el mismo destino: el bloque de inscripción.
+It's not an informational site, it's a sales page. Every section pushes toward the same destination: the enrollment block.
 
 ---
 
-## Qué incluye
+## What's included
 
-- **Hero** con promesa principal y video de vista previa
-- **Beneficios** del método
-- **Detalles del curso**: nivel, formato de clases, metodología
-- **Sensei**: presentación del instructor
-- **Testimonios** de alumnos
-- **Precio**, garantía y CTA de compra
-- **Bonus** incluidos en la inscripción
-- **Contacto** y footer con enlaces legales
-- Páginas de `/terminos` y `/privacidad`
+- **Hero** with the main promise and a preview video
+- **Benefits** of the method
+- **Course details**: level, class format, methodology
+- **Sensei**: instructor introduction
+- **Testimonials** from students
+- **Pricing**, guarantee and purchase CTA
+- **Bonuses** included with enrollment
+- **Contact** and footer with legal links
+- `/terminos` and `/privacidad` pages
 
 ---
 
@@ -39,20 +39,20 @@ No es un sitio informativo, es una página de venta. Cada sección empuja hacia 
 ![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-Astro 6 en modo `server`, con adaptador `@astrojs/node` (standalone) y Tailwind CSS 4. Paleta y tipografía centralizadas en `src/styles/global.css`: serif japonesa **Shippori Mincho** para títulos, **DM Sans** para el cuerpo.
+Astro 6 in `server` mode, with the `@astrojs/node` (standalone) adapter and Tailwind CSS 4. Color palette and typography centralized in `src/styles/global.css`: Japanese serif **Shippori Mincho** for headings, **DM Sans** for body text.
 
 ---
 
-## Puesta en marcha
+## Getting started
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Disponible en `http://localhost:4321`.
+Available at `http://localhost:4321`.
 
-Build y ejecución en producción:
+Production build and run:
 
 ```bash
 pnpm build
@@ -68,22 +68,22 @@ docker build -t aruberuto .
 docker run -p 4321:4321 aruberuto
 ```
 
-Build multi-stage (`deps` → `build` → `runtime`) sobre `node:22-alpine`. La imagen final solo lleva `dist/`, `node_modules` y `package.json`.
+Multi-stage build (`deps` → `build` → `runtime`) on `node:22-alpine`. The final image only ships `dist/`, `node_modules` and `package.json`.
 
 ---
 
-## Estructura
+## Structure
 
 ```
 src/
-├─ components/    # Secciones de la landing (Hero, Pricing, Sensei, etc.)
-├─ layouts/       # Layout.astro — head, SEO, Open Graph/Twitter, fuentes
+├─ components/    # Landing sections (Hero, Pricing, Sensei, etc.)
+├─ layouts/       # Layout.astro — head, SEO, Open Graph/Twitter, fonts
 ├─ pages/         # index, terminos, privacidad
-└─ styles/        # Tokens de color y tipografía
+└─ styles/        # Color and typography tokens
 ```
 
 ---
 
-## Estado
+## Status
 
-Propuesta en revisión. Contenido, precios y enlace de pago (Hotmart) sujetos a validación antes de publicar en producción.
+Proposal under review. Content, pricing and payment link (Hotmart) subject to validation before going to production.
