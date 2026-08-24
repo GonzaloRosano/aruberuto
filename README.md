@@ -10,6 +10,8 @@
 
 ## About the project
 
+> Unsolicited proposal, built on my own initiative for Alberto Alonso Cividanes (Aruberuto Makoto) as a work sample. Not a project commissioned by him.
+
 Single-view landing page to sell **Aruberuto Makoto**'s online Japanese course, taught by Alberto Alonso Cividanes. The goal is direct: communicate the method, build trust through testimonials and social proof, and convert the visitor into an enrolled student.
 
 It's not an informational site, it's a sales page. Every section pushes toward the same destination: the enrollment block.
