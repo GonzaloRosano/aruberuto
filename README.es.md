@@ -30,7 +30,7 @@ No es un sitio informativo, es una página de venta. Cada sección empuja hacia 
 
 ---
 
-## Tech Stack
+## Stack técnico
 
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
