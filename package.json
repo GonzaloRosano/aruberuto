@@ -6,11 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "start": "node dist/server/entry.mjs"
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^10.1.2",
     "astro": "^6.4.2"
   },
   "devDependencies": {
