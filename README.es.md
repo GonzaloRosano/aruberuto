@@ -10,6 +10,8 @@
 
 ## Sobre el proyecto
 
+> Propuesta no solicitada, desarrollada por iniciativa propia para Alberto Alonso Cividanes (Aruberuto Makoto) como muestra de trabajo. No es un desarrollo comisionado por él.
+
 Landing page de una sola vista para vender el curso de japonés online de **Aruberuto Makoto**, dictado por Alberto Alonso Cividanes. El objetivo es directo: comunicar el método, generar confianza con testimonios y prueba social, y convertir al visitante en alumno inscrito.
 
 No es un sitio informativo, es una página de venta. Cada sección empuja hacia el mismo destino: el bloque de inscripción.
